@@ -11,9 +11,18 @@ const toggleNavigation = () => {
   navigation.classList.toggle(IS_ACTIVE);
   blurOverlay.classList.toggle(IS_ACTIVE);
   fullpageEl.classList.toggle('no-scroll');
+
+  if (scrollActive) {
+    scrollActive = false
+    fullpage_api.setAllowScrolling(scrollActive);
+  }else{
+    scrollActive = true
+    fullpage_api.setAllowScrolling(scrollActive);
+  }
+
 };
 
-menuBtn.addEventListener('click', toggleNavigation);
+menuBtn.addEventListener('mouseover', toggleNavigation);
 navCloseBtn.addEventListener('click', toggleNavigation);
 blurOverlay.addEventListener('click', toggleNavigation);
 
