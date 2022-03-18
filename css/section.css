@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Gothic+Coding&family=Noto+Sans+KR:wght@100&family=Noto+Serif+KR:wght@200&display=swap');
 
-#fullpage.no-scroll {
-  position:fixed;
-}
-
 .section {
   background-repeat: no-repeat;
   background-size: cover;
@@ -95,6 +91,12 @@
 .action_btn_secondary {
   background: rgba(255, 255, 255, 0.65);
   color: var(--primary-color);
+}
+
+#fullpage.no-scroll {
+  /* overflow-y: hidden;
+  height: 100%; */
+  position:fixed;
 }
 
 /* 애니메이션 */
