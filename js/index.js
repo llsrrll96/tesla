@@ -6,6 +6,7 @@ const navCloseBtn = document.querySelector('.navigation_close_btn');
 const blurOverlay = document.querySelector('.blur_overlay');
 
 const IS_ACTIVE = 'is--active';
+var scrollActive = true;
 
 const toggleNavigation = () => {
   navigation.classList.toggle(IS_ACTIVE);
